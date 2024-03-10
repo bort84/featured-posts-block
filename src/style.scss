@@ -1,0 +1,50 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-featured-posts-block-featured-posts-block {
+	padding: 50px 0;
+	
+	article {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		margin-top: 30px;
+		&:first-child {
+			margin-top: 0;
+		}
+
+		> div {
+			flex: 0 1 calc(100% - 170px);
+		}
+	}
+
+	figure {
+		padding-right: 20px;
+		margin: 0;
+		flex: 0 1 150px;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	
+	.category {
+		font-size: 14px;
+	}
+
+	h2 {
+		margin: 0;
+		font-size: 30px !important;
+		a {
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
