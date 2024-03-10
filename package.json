@@ -1,6 +1,6 @@
 {
 	"name": "featured-posts-block",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Show a set number of posts to feature",
 	"author": "John Balnaves",
 	"license": "GPL-2.0-or-later",

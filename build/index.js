@@ -101,13 +101,13 @@ function Edit({
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("fieldset", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ToggleControl, {
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Show Featured Images', 'featured-posts-block'),
     checked: showFeaturedImage,
-    onChange: value => setAttributes({
+    onChange: () => setAttributes({
       showFeaturedImage: !showFeaturedImage
     })
   }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("fieldset", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ToggleControl, {
     checked: !!showCategory,
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Show Categories', 'featured-posts-block'),
-    onChange: value => setAttributes({
+    onChange: () => setAttributes({
       showCategory: !showCategory
     })
   }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("fieldset", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.__experimentalNumberControl, {
@@ -116,7 +116,7 @@ function Edit({
     min: 1,
     value: numberOfPosts,
     onChange: value => setAttributes({
-      numberOfPosts: value
+      numberOfPosts: parseInt(value)
     })
   }))))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     ...blockProps

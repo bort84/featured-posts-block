@@ -97,7 +97,7 @@ export default function Edit({ attributes, setAttributes }) {
                                     'featured-posts-block'
                                 ) }
                                 checked={ showFeaturedImage }
-								onChange={ ( value ) =>
+								onChange={ () =>
                                     setAttributes( { showFeaturedImage: ! showFeaturedImage } )
                                 }
                             />
@@ -112,7 +112,7 @@ export default function Edit({ attributes, setAttributes }) {
                                     'Show Categories',
                                     'featured-posts-block'
                                 ) }
-                                onChange={ ( value ) =>
+                                onChange={ () =>
                                     setAttributes( { showCategory: ! showCategory } )
                                 }
                             />
@@ -127,7 +127,7 @@ export default function Edit({ attributes, setAttributes }) {
 								min={1}
 								value={ numberOfPosts }
 								onChange={ ( value ) => 
-									setAttributes( { numberOfPosts: value } ) 
+									setAttributes( { numberOfPosts: parseInt(value) } ) 
 								}
 							/>
                         </fieldset>
