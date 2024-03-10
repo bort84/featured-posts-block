@@ -122,6 +122,10 @@ export default function Edit({ attributes, setAttributes }) {
                     <PanelRow>
 						<fieldset>
 							<NumberControl
+								label={ __(
+                                    'Set number of posts',
+                                    'featured-posts-block'
+                                ) }
 								isShiftStepEnabled={ true }
 								shiftStep={ 1 }
 								min={1}
